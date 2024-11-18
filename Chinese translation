@@ -1,0 +1,339 @@
+cooldown: '&6警告: &7请在 %time% se秒后再放置!'
+no_such_command: '&c没有此命令. 请输入 /ps help 查看'
+no_access: '&c权限不足.'
+no_room_in_inventory: '&c背包空间不足.'
+no_room_dropping_on_floor: '&c背包空间不足，物品将掉落于地面.'
+invalid_block: '&c无效的领地核心.'
+not_enough_money: '&c金币不足! 此价格为 %price%.'
+paid_money: '&b已成功支付 $%price%.'
+invalid_world: '&c无效的世界.'
+must_be_player: '&c你必须是玩家才能执行此命令.'
+go_back_page: 上一页.
+go_next_page: 下一页.
+page_does_not_exist: '&c页面不存在.'
+help: |-
+  &8&m=====&r PS 帮助 by 阡陌 &8&m=====
+  &b> &7/ps help
+help_next: '&7输入 /ps help %page%以转到下一页 !'
+command_requires_player_name: '&c此命令需要玩家id.'
+no_permission_toggle: '&c你没有权限执行该指令.'
+no_permission_create: '&c你没有权限放置领地核心.'
+no_permission_create_specific: '&c你没有权限放置该类型的领地核心.'
+no_permission_destroy: '&c你没有权限破坏领地核心.'
+no_permission_members: '&c你没有权限使用成员命令.'
+no_permission_owners: '&c你没有权限使用所有者命令.'
+no_permission_admin: '&c你没有权限使用该命令.'
+no_permission_count: '&c你没有权限使用该命令.'
+no_permission_count_others: '&c你没有权限使用该命令.'
+no_permission_flags: '&c你没有权限使用该标志命令.'
+no_permission_per_flag: '&c你没有权限使用该标志.'
+no_permission_rent: '&c你没有租用权限.'
+no_permission_tax: '&c你没有权限使用税收命令.'
+no_permission_buysell: '&c你没有权限买卖领地.'
+no_permission_unhide: '&c你没有权限取消隐藏领地核心.'
+no_permission_hide: '&c你没有权限隐藏领地核心.'
+no_permission_info: '&c你没有权限使用领地信息命令.'
+no_permission_priority: '&c你没有权限使用优先级命令.'
+no_permission_region: '&c你没有权限使用领地命令.'
+no_permission_tp: '&c你没有权限传送到其他玩家的领地核心.'
+no_permission_home: '&c你没有权限传送到自己的领地核心.'
+no_permission_unclaim: '&c你没有权限使用取消认领命令.'
+no_permission_unclaim_remote: '&c你没有权限使用取消认领命令.'
+no_permission_view: '&c你没有权限使用查看命令.'
+no_permission_give: '&c你没有权限使用给予命令.'
+no_permission_get: '&c你没有权限使用获取命令.'
+no_permission_sethome: '&c你没有权限使用设置家的命令.'
+no_permission_list: '&c你没有权限使用列表命令.'
+no_permission_list_others: '&c你没有权限使用他人列表命令.'
+no_permission_name: '&c你没有权限使用命名命令.'
+no_permission_setparent: '&c你没有权限使用设置父领地命令.'
+no_permission_setparent_others: '&c你没有权限从你不拥有的领地继承.'
+no_permission_merge: '&c你没有权限使用 /ps merge.'
+psregion:
+  added_to_region: '&b%player%&7 已被添加到此领地.'
+  added_to_region_specific: '&b%player%&7 已被添加到领地 %region%.'
+  removed_from_region: '&b%player%&7 已从领地移除.'
+  removed_from_region_specific: '&b%player%&7 已从领地 %region%移除.'
+  not_in_region: '&c你不在保护区范围内!'
+  player_not_found: '&c玩家未找到.'
+  not_ps_region: '&c不是保护领地.'
+  region_does_not_exist: '&c领地不存在.'
+  no_regions_owned: '&c在此世界中你没有领地!'
+  no_region_permission: '&c你在此领地没有权限进行此操作.'
+  protected: '&b此领地已受保护.'
+  no_longer_protected: '&e此领地已不受保护.'
+  cant_protect_that: '&c你不能保护该领地.'
+  reached_region_limit: '&c你不能再有更多受保护的领地 (%limit%).'
+  reached_per_block_region_limit: '&c你不能再有更多此类型领地(%limit%).'
+  world_denied_create: '&c你不能在此世界创建保护.'
+  region_overlap: '&c你不能在此放置领地核心，它与另一个领地重叠.'
+  region_too_close: '&c你的领地核心必须距离其他领地边缘至少%num% 个方块!'
+  cant_teleport: '&c你的传送被保护领地阻挡!'
+  specify_id_instead_of_alias: |-
+    '&7有多个领地使用此名称，
+     领地名称: &b%regions%.'
+  region_not_adjacent: '&c你已超过非相邻领地限制！尝试将你的领地核心放置得更靠近你拥有的其他领地.'
+  not_overlapping: '&c这些领地彼此不重叠!'
+  multi_region_does_not_exist: 这些领地中有一个不存在!
+  no_region_holes: '&c在领地内检测到未保护领地！这是不允许的!'
+  delete_region_prevented: '&7 领地无法被移除，可能是因为它会在现有领地中创建一个空洞.'
+  not_owner: '&c你不是此领地的所有者!'
+  cannot_merge_rented_region: '&c无法合并领地，因为领地 %region% 正在出租!'
+  no_permission_region_type: '&c你没有权限拥有此领地类型.'
+  hidden: '&7领地核心现在已隐藏.'
+  must_be_placed_in_existing_region: '&c此必须放置在现有领地内!'
+  already_in_location_is_hidden: '&c此位置已存在一个领地（保护方块是否已隐藏？'
+  cannot_remove_yourself_last_owner: '&c你不能移除自己，因为你是最后一个所有者.'
+  cannot_remove_yourself_all_regions: '&c出于安全原因，你不能一次性从所有领地中移除自己.'
+toggle:
+  help: '&b> &7/ps toggle|on|off'
+  help_desc: 使用此命令打开或关闭领地核心的放置.
+  toggle_on: '&b领地核心放置已打开.'
+  toggle_off: '&b领地核心放置已关闭.'
+count:
+  count_help: '&b> &7/ps count [player(optional)]'
+  count_help_desc: 计算你或其他玩家拥有的领地数量.
+  personal_region_count: '&7你在此世界的领地数量: &b%num%'
+  personal_region_count_merged: '&7- 包括每个合并领地: &b%num%'
+  other_region_count: '&7%player%''s 在此世界的领地数量: &b%num%'
+  other_region_count_merged: '&7- 包括每个合并领地: &b%num%'
+flag:
+  help: '&b> &7/ps flag [flagname] [value|null|default]'
+  help_desc: 使用此命令在你的受保护领地中设置权限.
+  flag_set: '&b%flag%&7 权限已设置.'
+  flag_not_set: '&b%flag%&7 权限未设置.请再次检查你的值'
+  flag_prevent_exploit: '&c此功能已被禁用以防止利用漏洞.'
+  flag_prevent_exploit_hover: '&c出于安全原因已禁用.'
+  gui_header: '&8&m=====&r 权限 (点击更改) &8&m====='
+  gui_hover_set: '&b点击设置.'
+  gui_hover_set_text: |-
+    &b点击更改.&f
+    Current value:
+    %value%
+  hover_change_group: 点击将此权限设置为仅应用于 %group%.
+  hover_change_group_null: '&c你必须先为此旗帜设置一个值，然后才能更改组.'
+rent:
+  help: '&b> &7/ps rent'
+  help_desc: 使用此命令管理租用（购买和出售）.
+  help_header: '&8&m=====&r 租用帮助 &8&m====='
+  already_renting: '&c该领地已在出租！你必须先停止出租该领地.'
+  not_rented: '&c该领地未被租用.'
+  lease_success: |-
+    &b领地租用条款已设置:
+    &b价格: &7%price%
+    &b支付时间: &7%period%
+  stopped: '&b租用已停止.'
+  evicted: '&7踢出租户 %tenant%.'
+  not_renting: '&c该领地未出租.'
+  paid_landlord: '&b%tenant%&7 已支付 &b$%price%&7 用于租用 &b%region%&7.'
+  paid_tenant: '&7已支付 &b$%price%&7给 &b%landlord%&7 用于领地 &b%region%&7.'
+  renting_landlord: '&b%player%&7 现在正在出租领地 &b%region%&7.'
+  renting_tenant: '&7 你现在正在以 & b% price% 每 & b% period% 的价格租用领地 & b% region%.'
+  not_tenant: '&c你不是此领地的租户!'
+  tenant_stopped_landlord: '&b%player%&7已停止出租领地 &b%region%&7. 现在其他人可以租用.'
+  tenant_stopped_tenant: '&b你已停止出租领地 %region%.'
+  being_sold: '&c该领地正在出售！请先执行  /ps sell stop first.'
+  evict_no_money_tenant: '&7你已被 & cevicted 从领地 & b% region% 驱逐，因为你没有足够的钱（% price%）支付租金.'
+  evict_no_money_landlord: '&b% tenant% 已被 & cevicted 从领地 & b% region% 驱逐，因为他们无法支付租金.'
+  cannot_rent_own_region: '&c你不能租用自己的领地!'
+  reached_limit: '&c你已达到允许租用的领地数量限制!'
+  price_too_low: '&c租金价格过低（必须大于 % price%）.'
+  price_too_high: '&c租金价格过高（必须低于 % price%）.'
+  period_too_short: '&c租用期限过短（必须长于 % period% 秒）.'
+  period_too_long: '&c租用期限过长（必须短于 % period% 秒）.'
+  period_invalid: '&c无效的租用期限格式！例如：24h 表示每天一次.'
+  cannot_break_while_renting: '&c领地正在出租时你不能破坏它.'
+tax:
+  help: '&b> &7/ps tax'
+  help_desc: 使用此命令管理和支付税收.
+  help_header: '&8&m=====&r 税收帮助 &8&m====='
+  disabled_region: '&c此领地税收已禁用.'
+  set_as_autopayer: '&7领地 & b% region% 的税收现在将由你自动支付.'
+  set_no_autopayer: '&7领地 & b% region% 的税收现在必须手动支付.'
+  paid: '&7已为领地 & b% region% 支付 & b$% amount% 的税收.'
+  info_header: '&8&m=====&r 税收信息（点击获取更多信息） &8&m====='
+  join_msg_pending_payments: |-
+    &7你在你的领地中有 & b$% money% 的税款待支付！
+    使用  /ps tax info.
+  player_region_info: '&7> &b% region%&7 - &3$% money% 待支付'
+  player_region_info_autopayer: '&7>  &b% region%&7 - &3$% money% 待支付 & 7（你自动支付）'
+  click_to_show_more_info: 点击显示更多信息
+  region_info_header: '&8&m=====&r %region% 税收信息 &8&m====='
+  region_info: |-
+    &9税率: &7$%taxrate% (所有合并领地的总和)
+    &9税收周期之间的时间: &7%taxperiod%
+    &9周期后支付税款的时间: &7%taxpaymentperiod%
+    &9税收自动支付者: &7%taxautopayer%
+    &9欠税: &7$%taxowed%
+  next_page: '&7输入 /ps tax info -p %page% 已转到下一页!'
+buy:
+  help: '&b> &7/ps buy'
+  help_desc: 购买你当前所在的领地.
+  not_for_sale: '&c此领地不出售.'
+  stop_sell: '&7该领地现在不出售.'
+  sold_buyer: '&7 以 & b$% price% 从 & b% player% 购买了领地 & b% region%.'
+  sold_seller: '&7 以 & b$% price% 将领地 & b% region% 出售给了 & b% player%.'
+sell:
+  help: '&b> &7/ps sell [price|stop]'
+  help_desc: 出售你当前所在的领地.
+  rented_out: '&c 该领地正在出租！你必须先停止出租才能出售.'
+  for_sale: '&7该领地现在以 & b$% price% 出售.'
+visibility:
+  hide_help: '&b> &7/ps hide'
+  hide_help_desc: 使用此命令隐藏或取消隐藏你的领地核心.
+  unhide_help: '&b> &7/ps unhide'
+  unhide_help_desc: 使用此命令隐藏或取消隐藏你的领地核心.
+  already_not_hidden: '&7领地核心似乎没有隐藏...'
+  already_hidden: '&7领地核心似乎已经隐藏...'
+info:
+  help: '&b> &7/ps info members|owners|flags'
+  help_desc: 在领地内使用此命令查看更多关于它的信息.
+  header: '&8&m=====&r PS Info &8&m====='
+  type2: '&9类型: &7%type%'
+  may_be_merged: （可能与其他类型合并）
+  merged2: '&9合并领地: &7%merged%'
+  members2: '&9成员: &7%members%'
+  no_members: '&c(无成员)'
+  owners2: '&9所有者: &7%owners%'
+  no_owners: '&c(无所有者)'
+  flags2: '&9权限: &7%flags%'
+  no_flags: (无)
+  region2: '&9领地: &b%region%'
+  priority2: '&9优先级: &b%priority%'
+  parent2: '&9父领地: &b%parentregion%'
+  bounds_xyz: '&9边界: &b(%minx%,%miny%,%minz%) -> (%maxx%,%maxy%,%maxz%)'
+  bounds_xz: '&9边界: &b(%minx%, %minz%) -> (%maxx%, %maxz%)'
+  seller2: '&9卖家: &7%seller%'
+  price2: '&9价格: &7%price%'
+  tenant2: '&9租户: &7%tenant%'
+  landlord2: '&9房东: &7%landlord%'
+  rent2: '&9租金: &7%rent%'
+  available_for_sale: '&b领地可出售!'
+  available_for_rent: '&b领地可出租!'
+priority:
+  help: '&b> &7/ps priority [数值|null]'
+  help_desc: 使用此命令设置你的领地的优先级.
+  info: '&7优先级: %priority%'
+  set: '&e优先级已设置.'
+  error: '&c 解析输入错误，请再次检查?'
+region:
+  help: '&b> &7/ps region [list|remove|disown] [playername]'
+  help_desc: 使用此命令查找信息或编辑其他玩家（或你自己）的受保护领地.
+  not_found_for_player: '&7在此世界中未找到 %player% 的领地.'
+  list: '&7%player% 在此世界中的领地: &b%regions%'
+  remove: '&e%player%在此世界中的领地已被移除，并且他们已从共同拥有的领地中移除.'
+  disown: '&e%player% 已从在此世界中的所有领地中移除所有权.'
+  error_search: '&c搜索%player%的领地时出错.请确保输入了正确名字'
+tp:
+  help: '&b> &7/ps tp [id/player] [num (optional)]'
+  help_desc: 将你传送到给定玩家的一个领地.
+  number_above_zero: '&c请输入大于 0 的数字.'
+  valid_number: '&c请输入有效数字.'
+  only_has_regions: '&c%player% 在此世界中仅有 %num% 个受保护领地!'
+  tping: '&a传送中...'
+  error_name: '&c传送到受保护领地时出错! (解析 WG 领地名称错误)'
+  error_tp: '&c找到要传送的领地时出错!'
+  in_seconds: '&7将在 &b%seconds%&7秒后传送.'
+  cancelled_moved: '&c传送终止. 请不要移动!'
+home:
+  help: '&b> &7/ps home [name/id]'
+  help_desc: 将你传送到你的一个受保护领地.
+  header: '&8&m=====&r 家 (点击传送) &8&m====='
+  click_to_tp: 点击传送!
+  next_page: '&7输入 /ps home -p %page% 前往下一页!'
+unclaim:
+  help: '&b> &7/ps unclaim'
+  help_desc: 使用此命令捡起已放置的领地核心并移除领地.
+  header: '&8&m=====&r 取消认领 (点击取消认领) &8&m====='
+view:
+  help: '&b> &7/ps view'
+  help_desc: 使用此命令查看受保护领地的边界.
+  cooldown: '&c请在一段时间后再使用 /ps view.'
+  generating: '&7正在生成边界...'
+  generate_done: '&a完成! 边界将在 30 秒后消失!'
+  removing: |-
+    &b正在移除边界...
+    &a如果你仍然看到幽灵方块，请重新登录!
+admin:
+  help: '&b> &7/ps admin'
+  help_desc: 输入 /ps admin help 获取更多信息.
+  cleanup_header: |-
+    &e清理 %arg% %days% 天
+    ================
+  cleanup_footer: |-
+    &e================
+    %arg% 清理完毕.
+  hide_toggled: '&e在此世界中所有领地核心已被 %message%.'
+  last_logon: '&e%player% 距离上次游玩实在 %days% 天前.'
+  is_banned: '&e%player% 被封禁.'
+  error_parsing: '&c解析天数错误，你确定它是一个数字吗?'
+  console_world: '&c请将世界指定为最后一个参数.'
+  lastlogons_header: |-
+    &e%days% 天以上:
+    ================
+  lastlogons_line: '&e%player% %time% 天'
+  lastlogons_footer: |-
+    &e================
+    显示玩家总数 %count%
+    检查玩家总数 %checked%
+reload:
+  help: '&b> &7/ps reload'
+  help_desc: 从配置文件重新加载设置.
+  start: '&b正在重新加载配置...'
+  complete: '&b配置重新加载完成!'
+addremove:
+  help: '&b> &7/ps add|remove [playername]'
+  help_desc: 使用此命令添加或移除你的受保护领地的成员.
+  owner_help: '&b> &7/ps addowner|removeowner [playername]'
+  owner_help_desc: 使用此命令添加或移除你的受保护领地的所有者.
+  player_reached_limit: '&c此玩家已达到他们的领地限制.'
+  player_needs_to_be_online: '&c玩家需要在线才能添加他们.'
+get:
+  help: '&b> &7/ps get [block]'
+  help_desc: 使用此命令获取或购买一个领地核心.
+  gotten: '&b已将领地核心添加到背包!'
+  no_permission_block: '&c你没有权限获取此方块.'
+  header: '&8&m=====&r 领地核心 (点击获取) &8&m====='
+  gui_block: '&7> &b%alias% &7- %description% (&f$%price%&7)'
+  gui_hover: 点击购买 %alias%!
+give:
+  help: '&b> &7/ps give [block] [player] [amount (optional)]'
+  help_desc: 使用此命令给予玩家一个领地核心.
+  given: '&7已将 &b%block%&7给予 &b%player%&7.'
+  no_inventory_room: '&c玩家没有足够的背包空间.'
+sethome:
+  help: '&b> &7/ps sethome'
+  help_desc: 使用此命令将领地的家设置为你当前所在位置.
+  set: '&7已将 &b%psid%&7 的家设置为你的位置.'
+list:
+  help: '&b> &7/ps list [player (optional)]'
+  help_desc: 使用此命令列出你或其他玩家拥有的领地.
+  header: '&8&m=====&r %player%的领地 &8&m====='
+  owner: '&7所有者 of:'
+  member: '&7成员:'
+  no_regions: '&7你当前不拥有且不是任何领地的成员.'
+  no_regions_player: '&b%player% &7未拥有且不是任何领地的成员.'
+name:
+  help: '&b> &7/ps name [name|none]'
+  help_desc: 使用此命令给你的领地起一个名称，以便更容易识别你的领地.
+  removed: '&7已移除 %id% 的名称.'
+  set_name: '&7已将 %id% 的名称设置为 &b%name%&7.'
+  taken: '&7领地名称 &b%name%&7 已被使用! 请尝试其他名称.'
+setparent:
+  help: '&b> &7/ps setparent [region|none]'
+  help_desc: 使用此命令允许此领地从另一个领地继承属性 (owners, members, flags, etc.).
+  success: '&7已成功将 &b%id%&7 的父领地设置为 &b%parent%&7.'
+  success_remove: '&7已成功移除 &b%id%&7的父领地.'
+  circular_inheritance: '&c检测到循环继承 (父领地已从此领地继承?).父领地未设置.'
+merge:
+  help: '&b> &7/ps merge'
+  help_desc: 使用此命令将你所在的领地与其他重叠领地合并.
+  disabled: 配置文件中禁用了领地合并功能!
+  merged: '&b领地已成功合并!'
+  header: '&8&m=====&r 合并 %region% (点击合并) &8&m====='
+  warning: '&7注意: 这将删除当前领地的所有设置!'
+  not_allowed: '&c你不被允许合并此保护领地类型.'
+  into: '&b此领地与你可以合并的其他领地重叠!'
+  no_region: '&7没有可合并的重叠领地.'
+  click_to_merge: 点击与 %region% 合并!
+  auto_merged: '&7领地已自动与 &b%region%&7合并.'
